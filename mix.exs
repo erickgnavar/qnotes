@@ -46,7 +46,11 @@ defmodule Qnotes.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:nanoid, "~> 2.0"},
-      {:qr_code, "~> 2.1"}
+      {:qr_code, "~> 2.1"},
+      {:arc, "~> 0.11.0"},
+      {:ex_aws, "~> 2.1"},
+      {:ex_aws_s3, "~> 2.0"},
+      {:sweet_xml, "~> 0.6"}
     ]
   end
 

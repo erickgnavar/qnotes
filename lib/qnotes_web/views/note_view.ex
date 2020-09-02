@@ -9,4 +9,8 @@ defmodule QnotesWeb.NoteView do
     |> QRCode.create!()
     |> QRCode.Svg.to_base64()
   end
+
+  def image_url(%Note{image_path: path}) do
+    Qnotes.Photo.url(path, signed: true)
+  end
 end

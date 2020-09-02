@@ -72,3 +72,16 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :arc,
+  bucket: System.get_env("S3_BUCKET"),
+  asset_host: System.get_env("S3_ENDPOINT") <> "/" <> System.get_env("S3_BUCKET")
+
+config :ex_aws,
+  access_key_id: System.get_env("S3_ACCESS_KEY"),
+  secret_access_key: System.get_env("S3_SECRET_KEY"),
+  s3: [
+    scheme: "https://",
+    host: System.get_env("S3_HOST"),
+    region: "east"
+  ]

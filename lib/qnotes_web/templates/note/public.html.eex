@@ -6,4 +6,4 @@
   <%= @note.body %>
 </p>
 
-<img alt="<%= @note.title %>" src="#"/>
+<img alt="<%= @note.title %>" src="<%= image_url(@note) %>"/>

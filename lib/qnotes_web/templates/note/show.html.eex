@@ -25,3 +25,4 @@
 
 <span><%= link "Edit", to: Routes.note_path(@conn, :edit, @note) %></span>
 <span><%= link "Back", to: Routes.note_path(@conn, :index) %></span>
+<span><%= link "Public link", to: Routes.note_path(@conn, :public, @note.uid) %></span>
