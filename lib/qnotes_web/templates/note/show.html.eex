@@ -13,8 +13,7 @@
   </li>
 
   <li>
-    <strong>Uid:</strong>
-    <%= @note.uid %>
+    <img src="data:image/svg+xml;base64, <%= generate_b64_qr(@conn, @note) %>" />
   </li>
 
   <li>

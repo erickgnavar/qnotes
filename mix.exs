@@ -45,7 +45,8 @@ defmodule Qnotes.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:nanoid, "~> 2.0"}
+      {:nanoid, "~> 2.0"},
+      {:qr_code, "~> 2.1"}
     ]
   end
 
