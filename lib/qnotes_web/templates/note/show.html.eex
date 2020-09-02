@@ -1,0 +1,28 @@
+<h1>Show Note</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @note.title %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @note.body %>
+  </li>
+
+  <li>
+    <strong>Uid:</strong>
+    <%= @note.uid %>
+  </li>
+
+  <li>
+    <strong>Image path:</strong>
+    <%= @note.image_path %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.note_path(@conn, :edit, @note) %></span>
+<span><%= link "Back", to: Routes.note_path(@conn, :index) %></span>

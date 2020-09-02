@@ -17,6 +17,13 @@ defmodule QnotesWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/notes/:uid", NoteController, :public
+  end
+
+  scope "/admin", QnotesWeb do
+    pipe_through :browser
+
+    resources "/notes", NoteController
   end
 
   # Other scopes may use custom stacks.
